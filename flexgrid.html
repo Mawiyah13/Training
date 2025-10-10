@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpage Layout</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    .header, .footer {
+      background-color: #a2ef49;
+      padding: 20px;
+      text-align: center;
+      font-size: 30px;
+      height: 80px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .main {
+      display: flex;
+      flex: 1;
+      gap: 10px;
+      padding: 10px;
+    }
+    .sidebar {
+      background-color: #a2ef49;
+      width: 250px;
+      padding: 20px;
+      font-size: 25px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .content {
+      flex: 1;
+      background-color: #f0fff4;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .content1 {
+      background-color: #a2ef49;
+      border: 2px solid black;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      border-radius: 8px;
+    }
+    .content-row {
+      display: flex;
+      gap: 10px;
+    }
+    .content2, .content3 {
+      flex: 1;
+      background-color: #a2ef49;
+      border: 2px solid black;
+      height: 130px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 22px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .footer {
+      background-color: #a2ef49;
+      padding: 20px;
+      font-size: 25px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">Header</div>
+
+    <div class="main">
+      <div class="sidebar">Sidebar</div>
+
+      <div class="content">
+        <div class="content1">Content 1</div>
+
+        <div class="content-row">
+          <div class="content2">Content 2</div>
+          <div class="content3">Content 3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">Footer</div>
+  </div>
+
+</body>
+</html>
