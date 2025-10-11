@@ -5,23 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table,
-        th,
-        td {
-            border: 1px solid black;
-            border-collapse: collapse;
-            background-color: #aaacf5;
-        }
-        th,
-        td {
-            padding: 5px;
-            text-align: left;
-            background-color: #8d91f7;
-        }
-        table#t01 {
-            width: 100%;
-            background-color: #7377f4;
-        }
+        table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Poppins", sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Darker header */
+th {
+  background-color: #5a5de0; /* Deep indigo */
+  color: white;
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+}
+
+/* Pastel body rows */
+td {
+  background-color: #dcdcff; /* Soft pastel lavender */
+  color: #222;
+  padding: 10px;
+  font-size: 15px;
+}
+
+/* Subtle alternating row effect */
+tr:nth-child(even) td {
+  background-color: #e9e9ff;
+}
+
+/* Border and hover effect */
+table, th, td {
+  border: 1px solid #b3b3f3;
+}
+
+tr:hover td {
+  background-color: #c7c9ff;
+  transition: 0.3s ease;
+}
+
     </style>
 </head>
 <body>
